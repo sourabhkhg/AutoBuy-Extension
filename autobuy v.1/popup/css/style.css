@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-size: 13px;
+  word-wrap: break-word;
+  color: #504343;
+  width: 360px;
+}
+
+/*-------Header Style Starts------*/
+
+header {
+  height: 50px;
+}
+header > h2 {
+  font-size: 2em;
+  letter-spacing: -0.012em;
+}
+header > p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  letter-spacing: -0.3px;
+}
+header > p > a {
+  color: #0070e0b8;
+  transition: color 300ms ease;
+}
+header > p > a:hover {
+  text-decoration: none;
+}
+
+/*-------Header Style Ends------*/
+
+/*-------Title of Deals and Referral Starts-----*/
+
+div#title-deals-referral {
+  height: 44px;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+div#title-deals-referral > div.title {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3em 0;
+  cursor: pointer;
+  transition: color 300ms ease;
+}
+div#title-deals-referral > div.title:hover {
+  color: #0070e0b8;
+}
+div#title-deals-referral > div.title:first-child {
+  border-right: 1px solid #eee;
+}
+div#title-deals-referral > div.title > h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  padding: 9px 20px; /* correct it*/
+  border-bottom: 2px solid transparent;
+}
+
+/*------Title of Deals and Referral Ends------*/
+
+/*------Design of main middle body content Started ----*/
+
+section#deals > div.all-deals {
+  background: #fff;
+  padding: 1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  color: #999;
+  margin: 1em; /* correct but doubt */
+}
+section#deals > div.all-deals > div.all-deals-header {
+  padding-bottom: 0.5em;
+  border-bottom: 1px dotted #6c757d78;
+  margin: 0 0.25em;
+  align-items: center;
+}
+section#deals > div.all-deals > div.all-deals-header > span {
+}
+section#deals > div.all-deals > div.all-deals-header > span.down {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+section#deals > div.all-deals > div.all-deals-header > span.down:hover {
+  color: #0070e0b8;
+}
+section#deals > div.all-deals > div.all-deals-header > span > i {
+}
+section#deals > div.all-deals > div.all-deals-header > h4 {
+  font-size: 1.2em;
+  color: #504343;
+}
+section.main-middle-box {
+  height: 384px;
+  background-color: rgb(248, 249, 250, 1);
+  overflow-y: scroll;
+}
+section#deals > div.all-deals > div.guide-container {
+  display: block;
+}
+section#deals > div.all-deals > div.detail {
+  display: none;
+}
+section#deals > div.all-deals > div.guide-container > p.guide {
+  padding-top: 0.5em;
+}
+section#deals > div.all-deals > div.detail > div.sale > h5.list-header {
+  color: #504343;
+  line-height: 1.5em;
+  font-size: 1.05em;
+  font-weight: 400;
+  padding: 8px 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+div.main-content
+  > section#deals
+  > div.all-deals
+  > div.detail
+  > div.sale
+  > h5.list-header::before {
+  border-top: 1px dotted #6c757d45;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+div.main-content
+  > section#deals
+  > div.all-deals
+  > div.detail
+  > div.sale
+  > h5.list-header
+  > span {
+  background-color: #fff;
+  padding: 0 4px;
+  cursor: default;
+}
+
+/*------Flash sale box started-----*/
+
+div.flash-sale-box {
+  line-height: 1;
+  padding: 0.25em;
+  margin-bottom: 0.25em;
+}
+div.flash-sale-box > div.sale-box {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 0.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+}
+div.flash-sale-box > div.sale-box > div.left-sale-box {
+  flex-grow: 2;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.25em;
+}
+div.flash-sale-box > div.sale-box > div.left-sale-box > p.company-name {
+}
+div.flash-sale-box > div.sale-box > div.left-sale-box > p.company-name > img {
+  width: 45px;
+  height: 55px;
+}
+div.flash-sale-box > div.sale-box > div.left-sale-box > p.item {
+  font-size: 1.2em;
+  color: #504343;
+  padding: 0.25em 0 0.15em 0;
+  letter-spacing: -0.25px;
+  font-weight: 500;
+}
+div.flash-sale-box > div.sale-box > div.left-sale-box > p.item > img {
+  width: 20px;
+  height: 20px;
+  margin: 0.1em;
+  margin-right: 0.25em;
+}
+div.flash-sale-box > div.sale-box > div.left-sale-box > p.item-detail {
+  font-size: 0.9em;
+}
+div.flash-sale-box > div.sale-box > div.right-sale-box {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.25em;
+}
+div.flash-sale-box
+  > div.sale-box
+  > div.right-sale-box
+  > div.toggle-button-container {
+}
+div.flash-sale-box
+  > div.sale-box
+  > div.right-sale-box
+  > div.toggle-button-container
+  > div.toggle-button {
+  width: 39px;
+  height: 13px;
+  background: #999;
+  border-radius: 30px;
+  padding: 3.5px;
+  display: table;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+div.flash-sale-box
+  > div.sale-box
+  > div.right-sale-box
+  > div.toggle-button-container
+  > div.toggle-button
+  > div.toggle-circle {
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+div.flash-sale-box
+  > div.sale-box
+  > div.right-sale-box
+  > div.toggle-button-container
+  > div.toggle-button.active {
+  background: #0070e0b8;
+}
+div.flash-sale-box
+  > div.sale-box
+  > div.right-sale-box
+  > div.toggle-button-container
+  > div.toggle-button.active
+  > div.toggle-circle {
+  margin-left: 19px;
+}
+div.flash-sale-box
+  > div.sale-box
+  > div.right-sale-box
+  > div.countdown-container {
+  padding-top: 0.5em;
+  width: 85px;
+}
+div.flash-sale-box
+  > div.sale-box
+  > div.right-sale-box
+  > div.countdown-container
+  > div.countdown {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+/*-----Design of Referral page started-----*/
+
+section#referral {
+  overflow-y: auto;
+}
+section#referral > div.poster-box {
+}
+section#referral > div.poster-box > div.poster {
+  flex-direction: column;
+  background: #0070e0b8;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+}
+section#referral > div.poster-box > div.poster > p {
+  font-size: 2.2em;
+  font-weight: 600;
+}
+section#referral > div.poster-box > div.poster > span {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+section#referral > div.copylink-box {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section#referral > div.copylink-box > p.refer-instruction {
+  padding: 0.25em 0;
+}
+section#referral > div.copylink-box > div.link {
+  display: flex;
+  justify-content: stretch;
+  width: 90%;
+  margin: 1em;
+  line-height: 2;
+}
+section#referral > div.copylink-box > div.link > input {
+  width: 90%;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  line-height: 2;
+  border: 1px solid #999;
+  border-right: none;
+}
+section#referral > div.copylink-box > div.link > div.copy-button {
+  cursor: pointer;
+  background: #4596e8;
+  color: #fff;
+  padding: 0.65em 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.share-with-social {
+  margin: 0.5em 0;
+}
+div.share-with-social > p.social-share-instruction {
+  text-align: center;
+  padding: 0.25em 0;
+}
+div.share-with-social > div.social-type {
+  display: flex;
+  justify-content: center;
+  padding: 0.25em 0;
+}
+div.share-with-social > div.social-type > div.social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #999;
+  transition: color 200ms ease-in-out;
+}
+div.share-with-social > div.social-type > #twitter:hover {
+  color: #55acee;
+}
+
+div.share-with-social > div.social-type > #facebook:hover {
+  color: #3b5998;
+}
+div.share-with-social > div.social-type > #google:hover {
+  color: #dd4b39;
+}
+div.share-with-social > div.social-type > div.social > span {
+}
+div.share-with-social > div.social-type > div.social > span > i {
+}
+
+/*-----Referral page design ends-----*/
+
+/*-------Footer containing link to different page started -----*/
+
+footer#other-links {
+  margin: 0;
+  border-top: 1px solid #eee;
+  padding-top: 0.2em;
+}
+footer#other-links > h3.title-bottom {
+  font-size: 1.1em;
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 500;
+  border-right: 1px solid #eee;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+  padding: 0;
+}
+footer#other-links > h3.title-bottom > a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  left: 0;
+  top: 0;
+  color: inherit;
+  padding: 7px 10px;
+}
+footer#other-links > h3.title-bottom:hover {
+  opacity: 0.9;
+}
+footer#other-links > h3.title-bottom:last-child {
+  border-right: none;
+}
+
+/*------Footer Ends--------*/

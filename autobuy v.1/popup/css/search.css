@@ -1,0 +1,112 @@
+header {
+  position: relative;
+}
+
+header > span {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+header > span > a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  left: 0;
+  top: 0;
+  color: inherit;
+  padding: 5px;
+}
+div.main-content > div.search {
+  height: 44px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: stretch;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+div.main-content > div.search > input[type="text"] {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #504343;
+  font-size: 14px;
+  flex-grow: 7;
+  line-height: 44px;
+}
+div.main-content > div.search > a.search-btn {
+  color: #fff;
+  background: #0070e0b8;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+}
+div.main-content > section.main-middle-box {
+  height: 384px;
+}
+div.main-content > section.main-middle-box > p.trending-store {
+  margin: 0.5em;
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+  font-size: 14px;
+  color: #212529c7;
+}
+div.main-content > section.main-middle-box > div.search-result {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+div.main-content > section.main-middle-box > div.search-result > div.store-box {
+  background: #fff;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #999;
+  height: 139px;
+  border: 1px solid #dee2e6;
+  background-color: rgb(254, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 2px 12px 0px;
+  width: 139px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+}
+div.main-content
+  > section.main-middle-box
+  > div.search-result
+  > div.store-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 16px 0px;
+}
+div.main-content
+  > section.main-middle-box
+  > div.search-result
+  > div.store-box
+  > img {
+  width: 70px;
+  height: 70px;
+}
+div.main-content
+  > section.main-middle-box
+  > div.search-result
+  > div.store-box
+  > p.store-name {
+  padding: 0.25em 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #524443d1;
+}
+div.main-content
+  > section.main-middle-box
+  > div.search-result
+  > div.store-box
+  > p.detail {
+  line-height: 0.5;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+}

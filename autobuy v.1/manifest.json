@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "extension",
+  "version": "1.0",
+  "description": "Buy product on flash sale and get the best in lowest price available",
+  "icons": {
+    "128": "extension128.png",
+    "48": "extension48.png",
+    "16": "extension16.png"
+  },
+  "browser_action": {
+    "default_icon": "extension16.png",
+    "default_popup": "popup/popup.html",
+    "default_title": "extension"
+  },
+  "permissions": ["storage"]
+}
